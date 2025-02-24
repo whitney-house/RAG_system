@@ -1,0 +1,112 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Chat container */
+.chat-container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Message styles */
+.messages {
+  max-height: 500px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.message {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message.user {
+  align-items: flex-end;
+}
+
+.message.bot {
+  align-items: flex-start;
+}
+
+.message .content {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #e8e8e8;
+}
+
+.message.user .content {
+  background-color: #dcf8c6;
+}
+
+/* Loading indicator */
+.loading {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}
+
+/* Input and button */
+form {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #075e54;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Reference recipes */
+.sources {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.sources h4 {
+  margin: 0 0 5px 0;
+  font-size: 1em;
+}
+
+.source {
+  background: #f9f9f9;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
