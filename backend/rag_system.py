@@ -1,5 +1,3 @@
-
-
 from llama_index.core import VectorStoreIndex, Document, Settings
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from datasets import load_dataset
