@@ -1,4 +1,5 @@
 # Recipe RAG System
+Inspired by (Understanding LLMs)[https://cogsciprag.github.io/Understanding-LLMs-course/intro.html]
 
 ## Project Overview
 
