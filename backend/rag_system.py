@@ -1,11 +1,4 @@
-"""
-Recipe RAG System - A retrieval-augmented generation system for recipes
-Author: [Your Name]
-Date: February 2025
 
-This system combines vector search with language model generation to provide
-contextually relevant recipe information based on user queries.
-"""
 
 from llama_index.core import VectorStoreIndex, Document, Settings
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
