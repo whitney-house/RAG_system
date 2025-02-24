@@ -27,15 +27,10 @@ The system consists of two main components:
 - **API Framework**: FastAPI
 - **Dataset**: HuggingFace Recipe NLG Lite
 - **Containerization**: Docker & Docker Compose
+- **Responsive Web Design**: javaScript, react, npm
 - **Monitoring**: Prometheus & Grafana (optional)
 
-## Skills Demonstrated
 
-- **Natural Language Processing**: Implementation of a RAG system using modern techniques
-- **API Development**: RESTful API design with proper validation and error handling
-- **Software Engineering**: Clean code architecture with appropriate abstractions
-- **MLOps Practices**: Containerization, testing, and monitoring setup
-- **Python Development**: Type hints, logging, configuration management
 
 ## Deployment
 
