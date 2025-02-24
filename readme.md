@@ -1,8 +1,5 @@
 # Recipe RAG System
 
-**Author:** [Your Name]  
-**Date:** February 2025
-
 ## Project Overview
 
 A production-ready Retrieval-Augmented Generation (RAG) system specialized for recipe queries. This system combines vector search with language model generation to provide contextually relevant recipe information based on user queries.
@@ -30,7 +27,6 @@ The system consists of two main components:
 - **API Framework**: FastAPI
 - **Dataset**: HuggingFace Recipe NLG Lite
 - **Containerization**: Docker & Docker Compose
-- **Testing**: pytest & unittest
 - **Monitoring**: Prometheus & Grafana (optional)
 
 ## Skills Demonstrated
@@ -56,4 +52,4 @@ This will start the API server and (optionally) the monitoring stack.
 - Implement caching layer for frequently asked questions
 - Add a vector database for improved scalability
 - Implement a feedback loop for continuous improvement
-- Develop a user-friendly front-end interface
+
