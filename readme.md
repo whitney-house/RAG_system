@@ -1,7 +1,5 @@
 # Recipe RAG System
-
-**Author:** [Your Name]  
-**Date:** February 2025
+Inspired by course: [Understanding LLMs](https://cogsciprag.github.io/Understanding-LLMs-course/intro.html)
 
 ## Project Overview
 
@@ -30,16 +28,10 @@ The system consists of two main components:
 - **API Framework**: FastAPI
 - **Dataset**: HuggingFace Recipe NLG Lite
 - **Containerization**: Docker & Docker Compose
-- **Testing**: pytest & unittest
+- **Responsive Web Design**: javaScript, react, npm
 - **Monitoring**: Prometheus & Grafana (optional)
 
-## Skills Demonstrated
 
-- **Natural Language Processing**: Implementation of a RAG system using modern techniques
-- **API Development**: RESTful API design with proper validation and error handling
-- **Software Engineering**: Clean code architecture with appropriate abstractions
-- **MLOps Practices**: Containerization, testing, and monitoring setup
-- **Python Development**: Type hints, logging, configuration management
 
 ## Deployment
 
@@ -56,4 +48,4 @@ This will start the API server and (optionally) the monitoring stack.
 - Implement caching layer for frequently asked questions
 - Add a vector database for improved scalability
 - Implement a feedback loop for continuous improvement
-- Develop a user-friendly front-end interface
+
