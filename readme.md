@@ -58,27 +58,14 @@ Below are sample screenshots showcasing the system in action. The images are sto
 
 ---
 
-## ⚙️ How to Run?  
 
-### 1️⃣ Running the Backend  
-
-```bash
-# Navigate to the backend directory
-cd backend
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Start the FastAPI server
-uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-
-🔧 Future Improvements
+## 🔧 Future Improvements
 ✅ Agent Integration – Adding AI Agents for more complex reasoning and interactions
 ✅ Cross-Domain Support – Expand to industrial, automotive, and healthcare applications
 ✅ Fine-Tuning Support – Enable custom Llama training for domain-specific use cases
 ✅ Enhanced Vector Search – Move beyond FAISS to more scalable solutions
 ✅ Optimized for Apple Silicon – Further improvements for M1/M2/M3 chips
-📜 License & Usage
+## 📜 License & Usage
 This project is open for customization—feel free to replace models and datasets for your own use.
 ⚠️ Do not use this for commercial purposes without permission. 🚀
 
