@@ -83,11 +83,12 @@ def get_rag_system():
     if _rag_system is None:
         logger.info("Initializing RAG system")
         _rag_system = RecipeRAGSystem(
-            embedding_model=os.getenv("EMBEDDING_MODEL", "BAAI/bge-small-en-v1.5"),
-            llm_model=os.getenv("LLM_MODEL", "microsoft/Phi-3-mini-4k-instruct"),
-            temperature=float(os.getenv("TEMPERATURE", "0.7"))
+            embedding_model="sentence-transformers/all-MiniLM-L6-v2", 
+            llm_model="TinyLlama/TinyLlama-1.1B-Chat-v1.0",  
+            temperature=0.7
         )
     return _rag_system
+   
 
 # API endpoints
 @app.post("/api/chat", response_model=ChatResponse)

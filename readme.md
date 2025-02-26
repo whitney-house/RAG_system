@@ -1,51 +1,88 @@
-# Recipe RAG System
-Inspired by course: [Understanding LLMs](https://cogsciprag.github.io/Understanding-LLMs-course/intro.html)
+Recipe RAG System
+Inspired by course: Understanding LLMs
 
-## Project Overview
+📌 Project Overview
+This project is a cutting-edge Retrieval-Augmented Generation (RAG) system designed for recipe retrieval and context-aware response generation. It integrates Llama as the core language model, MiniLM embeddings for efficient retrieval, and FAISS for vector search, all exposed through a high-performance FastAPI server.
 
-A production-ready Retrieval-Augmented Generation (RAG) system specialized for recipe queries. This system combines vector search with language model generation to provide contextually relevant recipe information based on user queries.
+✅ Tested on MacBook Air M1—Runs smoothly with efficient memory usage!
+✅ Easily adaptable to other domains like automotive repair, industrial manufacturing, or medical Q&A—just swap datasets and models.
 
-### Key Features
-
-- **Efficient Information Retrieval**: Semantic search using BGE embeddings to find the most relevant recipes
-- **Contextual Response Generation**: LLM-powered responses that incorporate retrieved recipe information
-- **Scalable API Architecture**: FastAPI-based RESTful API with proper error handling and documentation
-- **Fully Containerized**: Docker and Docker Compose setup for easy deployment
-- **Comprehensive Testing**: Unit and integration tests covering core functionalities
-- **Monitoring Setup**: Prometheus and Grafana integration (optional)
-
-## Architecture
-
+🚀 Key Features
+🔍 Advanced RAG Architecture – Llama LLM + MiniLM embeddings + FAISS retrieval
+⚡ FastAPI-Powered API – Low-latency, production-ready RESTful service
+🛠️ Fully Modular – Users can easily swap models, embeddings, and datasets
+💻 Optimized for Apple Silicon – Runs smoothly on MacBook Air M1 without GPU
+📦 Dockerized Deployment – Ready to deploy with Docker & Docker Compose
+🌐 React Frontend – Chat-based UI for recipe exploration
+🛠️ Technology Stack
+Component	Technology
+Language Model	Llama (Meta AI)
+Vector Search	FAISS + LlamaIndex
+Embeddings	sentence-transformers/all-MiniLM-L6-v2
+API Framework	FastAPI
+Frontend	JavaScript, React.js
+Database (Optional)	FAISS for scalable vector search
+Containerization	Docker & Docker Compose
+🏛️ System Architecture
 The system consists of two main components:
 
-1. **Recipe RAG Core**: Handles document indexing, retrieval, and response generation
-2. **API Server**: Exposes the RAG functionality through REST endpoints
+1️⃣ Backend (RAG Core + API Server)
+Retrieval: FAISS + MiniLM embeddings for fast semantic search
+Generation: Llama model generates responses with retrieved context
+API Interface: FastAPI exposes endpoints for easy integration
+2️⃣ Frontend (React UI)
+Conversational chat interface
+Displays AI-generated recipes and contextual responses
+🖼️ Demo Preview
+Below are sample screenshots showcasing the system in action. The images are stored in the assets/ folder:
 
-## Technology Stack
+Demo	Description
+Recipe retrieval in action
+Multi-turn conversation
+Personalized recipe recommendations
+⚙️ How to Run?
+1️⃣ Running the Backend
+bash
 
-- **Vector Search**: LlamaIndex with HuggingFace embeddings (BGE model)
-- **Language Model**: Microsoft Phi-3-mini-4k-instruct
-- **API Framework**: FastAPI
-- **Dataset**: HuggingFace Recipe NLG Lite
-- **Containerization**: Docker & Docker Compose
-- **Responsive Web Design**: javaScript, react, npm
-- **Monitoring**: Prometheus & Grafana (optional)
+# Navigate to the backend directory
+cd backend
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Start the FastAPI server
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+📍 API documentation available at: http://localhost:8000/docs
+
+2️⃣ Running the Frontend
+
+# Navigate to the frontend directory
+cd frontend
+
+# Install dependencies
+npm install
+
+# Start the frontend
+npm start
+📍 The UI will be available at: http://localhost:3000/
+
+📦 Quick Deployment
+For containerized deployment, use Docker:
 
 
-
-## Deployment
-
-The system can be deployed with a single command:
-
-```bash
 docker-compose up -d
-```
+This will start:
 
-This will start the API server and (optionally) the monitoring stack.
-
-## Future Improvements
-
-- Implement caching layer for frequently asked questions
-- Add a vector database for improved scalability
-- Implement a feedback loop for continuous improvement
+Backend API Server (FastAPI + Llama)
+Frontend React App
+(Optional) Monitoring Stack (Prometheus + Grafana)
+🔧 Future Improvements
+✅ Agent Integration – Adding AI Agents for more complex reasoning and interactions
+✅ Cross-Domain Support – Expand to industrial, automotive, and healthcare applications
+✅ Fine-Tuning Support – Enable custom Llama training for domain-specific use cases
+✅ Enhanced Vector Search – Move beyond FAISS to more scalable solutions
+✅ Optimized for Apple Silicon – Further improvements for M1/M2/M3 chips
+📜 License & Usage
+This project is open for customization—feel free to replace models and datasets for your own use.
+⚠️ Do not use this for commercial purposes without permission. 🚀
 
