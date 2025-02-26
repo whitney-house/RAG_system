@@ -66,6 +66,6 @@ Below are sample screenshots showcasing the system in action. The images are sto
 ✅ Enhanced Vector Search – Move beyond FAISS to more scalable solutions  
 
 ## License & Usage
-This project is open for customization—feel free to replace models and datasets for your own use.
+This project is open for customization—feel free to replace models and datasets for your own use.  
 **⚠️ Do not use this for commercial purposes without permission. 🚀**
 
