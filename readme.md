@@ -1,49 +1,68 @@
-Recipe RAG System
-Inspired by course: Understanding LLMs
+# Recipe RAG System  
+Inspired by course: [Understanding LLMs](https://cogsciprag.github.io/Understanding-LLMs-course/intro.html)  
 
-📌 Project Overview
-This project is a cutting-edge Retrieval-Augmented Generation (RAG) system designed for recipe retrieval and context-aware response generation. It integrates Llama as the core language model, MiniLM embeddings for efficient retrieval, and FAISS for vector search, all exposed through a high-performance FastAPI server.
+## 📌 Project Overview  
+This project is a cutting-edge **Retrieval-Augmented Generation (RAG)** system designed for **recipe retrieval** and **context-aware response generation**.  
+It integrates **Llama** as the core language model, **MiniLM embeddings** for efficient retrieval, and **FAISS** for vector search, all exposed through a high-performance **FastAPI server**.  
 
-✅ Tested on MacBook Air M1—Runs smoothly with efficient memory usage!
-✅ Easily adaptable to other domains like automotive repair, industrial manufacturing, or medical Q&A—just swap datasets and models.
+✅ **Tested on MacBook Air M1** — Runs smoothly with efficient memory usage!  
+✅ **Easily adaptable** to other domains like **automotive repair, industrial manufacturing, or medical Q&A** — just swap datasets and models.  
 
-🚀 Key Features
-🔍 Advanced RAG Architecture – Llama LLM + MiniLM embeddings + FAISS retrieval
-⚡ FastAPI-Powered API – Low-latency, production-ready RESTful service
-🛠️ Fully Modular – Users can easily swap models, embeddings, and datasets
-💻 Optimized for Apple Silicon – Runs smoothly on MacBook Air M1 without GPU
-📦 Dockerized Deployment – Ready to deploy with Docker & Docker Compose
-🌐 React Frontend – Chat-based UI for recipe exploration
-🛠️ Technology Stack
-Component	Technology
-Language Model	Llama (Meta AI)
-Vector Search	FAISS + LlamaIndex
-Embeddings	sentence-transformers/all-MiniLM-L6-v2
-API Framework	FastAPI
-Frontend	JavaScript, React.js
-Database (Optional)	FAISS for scalable vector search
-Containerization	Docker & Docker Compose
-🏛️ System Architecture
-The system consists of two main components:
+---
 
-1️⃣ Backend (RAG Core + API Server)
-Retrieval: FAISS + MiniLM embeddings for fast semantic search
-Generation: Llama model generates responses with retrieved context
-API Interface: FastAPI exposes endpoints for easy integration
-2️⃣ Frontend (React UI)
-Conversational chat interface
-Displays AI-generated recipes and contextual responses
-🖼️ Demo Preview
-Below are sample screenshots showcasing the system in action. The images are stored in the assets/ folder:
+## 🚀 Key Features  
+- 🔍 **Advanced RAG Architecture** – Llama LLM + MiniLM embeddings + FAISS retrieval  
+- ⚡ **FastAPI-Powered API** – Low-latency, production-ready RESTful service  
+- 🛠️ **Fully Modular** – Users can easily swap models, embeddings, and datasets  
+- 💻 **Optimized for Apple Silicon** – Runs smoothly on **MacBook Air M1** without GPU  
+- 📦 **Dockerized Deployment** – Ready to deploy with **Docker & Docker Compose**  
+- 🌐 **React Frontend** – Chat-based UI for recipe exploration  
 
-Demo	Description
-Recipe retrieval in action
-Multi-turn conversation
-Personalized recipe recommendations
-⚙️ How to Run?
-1️⃣ Running the Backend
-bash
+---
 
+## 🛠️ Technology Stack  
+
+| **Component**      | **Technology**                                    |
+|--------------------|--------------------------------------------------|
+| **Language Model** | Llama (Meta AI)                                  |
+| **Vector Search**  | FAISS + LlamaIndex                               |
+| **Embeddings**     | `sentence-transformers/all-MiniLM-L6-v2`         |
+| **API Framework**  | FastAPI                                          |
+| **Frontend**      | JavaScript, React.js                             |
+| **Database**      | FAISS for scalable vector search                 |
+| **Containerization** | Docker & Docker Compose                       |
+
+---
+
+## 🏛️ System Architecture  
+
+### 1️⃣ Backend (RAG Core + API Server)  
+- **Retrieval**: FAISS + MiniLM embeddings for fast **semantic search**  
+- **Generation**: Llama model generates responses with retrieved **context**  
+- **API Interface**: FastAPI exposes endpoints for easy **integration**  
+
+### 2️⃣ Frontend (React UI)  
+- **Conversational chat interface**  
+- **Displays AI-generated recipes and contextual responses**  
+
+---
+
+## 🖼️ Demo Preview  
+Below are sample screenshots showcasing the system in action. The images are stored in the `assets/` folder:  
+
+| **Demo**                  | **Description**                          |
+|---------------------------|------------------------------------------|
+| ![Demo 1](assets/demo1.png) | Design          |
+| ![Demo 2](assets/demo2.png) | Recipe retrieval in action               |
+| ![Demo 3](assets/demo3.png) | Personalized recipe recommendations   |
+
+---
+
+## ⚙️ How to Run?  
+
+### 1️⃣ Running the Backend  
+
+```bash
 # Navigate to the backend directory
 cd backend
 
@@ -52,30 +71,7 @@ pip install -r requirements.txt
 
 # Start the FastAPI server
 uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-📍 API documentation available at: http://localhost:8000/docs
 
-2️⃣ Running the Frontend
-
-# Navigate to the frontend directory
-cd frontend
-
-# Install dependencies
-npm install
-
-# Start the frontend
-npm start
-📍 The UI will be available at: http://localhost:3000/
-
-📦 Quick Deployment
-For containerized deployment, use Docker:
-
-
-docker-compose up -d
-This will start:
-
-Backend API Server (FastAPI + Llama)
-Frontend React App
-(Optional) Monitoring Stack (Prometheus + Grafana)
 🔧 Future Improvements
 ✅ Agent Integration – Adding AI Agents for more complex reasoning and interactions
 ✅ Cross-Domain Support – Expand to industrial, automotive, and healthcare applications
