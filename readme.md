@@ -52,9 +52,9 @@ Below are sample screenshots showcasing the system in action. The images are sto
 
 | **Demo**                  | **Description**                          |
 |---------------------------|------------------------------------------|
-| ![Demo 1](assets/demo1.png) | Design          |
-| ![Demo 2](assets/demo2.png) | Recipe retrieval in action               |
-| ![Demo 3](assets/demo3.png) | Personalized recipe recommendations   |
+| ![Demo 1](https://github.com/whitney-house/RAG_system/blob/main/fronted/src/assets/demo1.png) | Design          |
+| ![Demo 2](https://github.com/whitney-house/RAG_system/blob/main/fronted/src/assets/demo2.png) | Recipe retrieval in action               |
+| ![Demo 3](assets/demo3.png](https://github.com/whitney-house/RAG_system/blob/main/fronted/src/assets/demo1.png) | Personalized recipe recommendations   |
 
 ---
 
