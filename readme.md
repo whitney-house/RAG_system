@@ -1,7 +1,7 @@
 # Recipe RAG System  
 Inspired by course: [Understanding LLMs](https://cogsciprag.github.io/Understanding-LLMs-course/intro.html)  
 
-## 📌 Project Overview  
+## Project Overview  
 This project is a cutting-edge **Retrieval-Augmented Generation (RAG)** system designed for **recipe retrieval** and **context-aware response generation**.  
 It integrates **Llama** as the core language model, **MiniLM embeddings** for efficient retrieval, and **FAISS** for vector search, all exposed through a high-performance **FastAPI server**.  
 
@@ -10,17 +10,17 @@ It integrates **Llama** as the core language model, **MiniLM embeddings** for ef
 
 ---
 
-## 🚀 Key Features  
-- 🔍 **Advanced RAG Architecture** – Llama LLM + MiniLM embeddings + FAISS retrieval  
-- ⚡ **FastAPI-Powered API** – Low-latency, production-ready RESTful service  
-- 🛠️ **Fully Modular** – Users can easily swap models, embeddings, and datasets  
-- 💻 **Optimized for Apple Silicon** – Runs smoothly on **MacBook Air M1** without GPU  
-- 📦 **Dockerized Deployment** – Ready to deploy with **Docker & Docker Compose**  
-- 🌐 **React Frontend** – Chat-based UI for recipe exploration  
+## Key Features  
+- **Advanced RAG Architecture** – Llama LLM + MiniLM embeddings + FAISS retrieval  
+- **FastAPI-Powered API** – Low-latency, production-ready RESTful service  
+- **Fully Modular** – Users can easily swap models, embeddings, and datasets  
+- **Optimized for Apple Silicon** – Runs smoothly on **MacBook Air M1** without GPU  
+- **Dockerized Deployment** – Ready to deploy with **Docker & Docker Compose**  
+- **React Frontend** – Chat-based UI for recipe exploration  
 
 ---
 
-## 🛠️ Technology Stack  
+## Technology Stack  
 
 | **Component**      | **Technology**                                    |
 |--------------------|--------------------------------------------------|
@@ -34,7 +34,7 @@ It integrates **Llama** as the core language model, **MiniLM embeddings** for ef
 
 ---
 
-## 🏛️ System Architecture  
+## System Architecture  
 
 ### 1️⃣ Backend (RAG Core + API Server)  
 - **Retrieval**: FAISS + MiniLM embeddings for fast **semantic search**  
@@ -47,7 +47,7 @@ It integrates **Llama** as the core language model, **MiniLM embeddings** for ef
 
 ---
 
-## 🖼️ Demo Preview  
+## Demo Preview  
 Below are sample screenshots showcasing the system in action. The images are stored in the `assets/` folder:  
 
 | **Demo**                  | **Description**                          |
@@ -59,13 +59,13 @@ Below are sample screenshots showcasing the system in action. The images are sto
 ---
 
 
-## 🔧 Future Improvements
+## Future Improvements
 ✅ Agent Integration – Adding AI Agents for more complex reasoning and interactions
 ✅ Cross-Domain Support – Expand to industrial, automotive, and healthcare applications
 ✅ Fine-Tuning Support – Enable custom Llama training for domain-specific use cases
 ✅ Enhanced Vector Search – Move beyond FAISS to more scalable solutions
-✅ Optimized for Apple Silicon – Further improvements for M1/M2/M3 chips
-## 📜 License & Usage
+
+## License & Usage
 This project is open for customization—feel free to replace models and datasets for your own use.
-⚠️ Do not use this for commercial purposes without permission. 🚀
+**⚠️ Do not use this for commercial purposes without permission. 🚀**
 
