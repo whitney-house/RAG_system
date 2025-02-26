@@ -60,10 +60,10 @@ Below are sample screenshots showcasing the system in action. The images are sto
 
 
 ## Future Improvements
-✅ Agent Integration – Adding AI Agents for more complex reasoning and interactions
-✅ Cross-Domain Support – Expand to industrial, automotive, and healthcare applications
-✅ Fine-Tuning Support – Enable custom Llama training for domain-specific use cases
-✅ Enhanced Vector Search – Move beyond FAISS to more scalable solutions
+✅ Agent Integration – Adding AI Agents for more complex reasoning and interactions  
+✅ Cross-Domain Support – Expand to industrial, automotive, and healthcare applications  
+✅ Fine-Tuning Support – Enable custom Llama training for domain-specific use cases  
+✅ Enhanced Vector Search – Move beyond FAISS to more scalable solutions  
 
 ## License & Usage
 This project is open for customization—feel free to replace models and datasets for your own use.
