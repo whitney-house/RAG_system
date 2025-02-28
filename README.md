@@ -2,10 +2,9 @@
 title: "rag recipe generation system"
 emoji: "🍽️"
 colorFrom: "green"
-colorTo: "grey"
+colorTo: "gray"
 sdk: "docker"
 sdk_version: "27.5.1"
-app_file: app.py
 pinned: false
 ---
 
