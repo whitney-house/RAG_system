@@ -1,10 +1,10 @@
 ---
-title: {{title}}
-emoji: {{emoji}}
-colorFrom: {{colorFrom}}
-colorTo: {{colorTo}}
-sdk: {{sdk}}
-sdk_version: "{{sdkVersion}}"
+title: "rag recipe generation system"
+emoji: "🍽️"
+colorFrom: "green"
+colorTo: "grey"
+sdk: "docker"
+sdk_version: "27.5.1"
 app_file: app.py
 pinned: false
 ---
