@@ -1,9 +1,11 @@
 ---
-title: Recipe Assistant  # Change this to your project name
-emoji: 🍽️  # Choose an emoji for your Space
-colorFrom: red  # Choose a color (red, blue, green, etc.)
-colorTo: yellow  # Choose a gradient color
-sdk: docker  # Since you are using Docker
+title: {{title}}
+emoji: {{emoji}}
+colorFrom: {{colorFrom}}
+colorTo: {{colorTo}}
+sdk: {{sdk}}
+sdk_version: "{{sdkVersion}}"
+app_file: app.py
 pinned: false
 ---
 
