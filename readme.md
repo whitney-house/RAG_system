@@ -1,4 +1,4 @@
-# Recipe RAG System  
+# ChatBot with RAG 
 Inspired by course: [Understanding LLMs](https://cogsciprag.github.io/Understanding-LLMs-course/intro.html)  
 
 ## Project Overview  
