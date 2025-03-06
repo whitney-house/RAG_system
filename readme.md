@@ -2,9 +2,10 @@
 Inspired by course: [Understanding LLMs](https://cogsciprag.github.io/Understanding-LLMs-course/intro.html)  
 
 ## Project Overview  
+
 This project is a cutting-edge **Retrieval-Augmented Generation (RAG)** system designed for **recipe retrieval** and **context-aware response generation**.  
 It integrates **Llama** as the core language model, **MiniLM embeddings** for efficient retrieval, and **FAISS** for vector search, all exposed through a high-performance **FastAPI server**.  
----
+
 
 ## Demo Preview  
 Below are sample screenshots showcasing the system in action. The images are stored in the `assets/` folder:  
