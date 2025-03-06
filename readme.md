@@ -3,8 +3,8 @@ Inspired by course: [Understanding LLMs](https://cogsciprag.github.io/Understand
 
 ## Project Overview  
 
-This project is a cutting-edge **Retrieval-Augmented Generation (RAG)** system designed for **recipe retrieval** and **context-aware response generation**.  
-It integrates **Llama** as the core language model, **MiniLM embeddings** for efficient retrieval, and **FAISS** for vector search, all exposed through a high-performance **FastAPI server**.  
+This project is a **ChatBot based on Retrieval-Augmented Generation (RAG)** system designed for **recipe retrieval** and **context-aware response generation**.  
+It integrates **Llama** as the core language model, **MiniLM embeddings** for efficient retrieval, and **FAISS** for vector search, all exposed through **React & FastAPI server**.  
 
 
 ## Demo Preview  
@@ -19,11 +19,9 @@ Below are sample screenshots showcasing the system in action. The images are sto
 ---
 
 
-## Future Improvements
-✅ Agent Integration – Adding AI Agents for more complex reasoning and interactions  
-✅ Cross-Domain Support – Expand to industrial, automotive, and healthcare applications  
-✅ Fine-Tuning Support – Enable custom Llama training for domain-specific use cases  
-✅ Enhanced Vector Search – Move beyond FAISS to more scalable solutions  
+## In Progree
+✅ Integrate MultiModal with multi RAG pipeline
+
 
 ## License & Usage
 This project is open for customization—feel free to replace models and datasets for your own use.  
