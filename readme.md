@@ -19,7 +19,7 @@ Below are sample screenshots showcasing the system in action. The images are sto
 ---
 
 
-## In Progree
+## In Progress
 ✅ Integrate MultiModal with multi RAG pipeline
 
 
