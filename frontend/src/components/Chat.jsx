@@ -6,6 +6,7 @@ const Chat = () => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
 
   const cleanText = (text) => {
     return text
@@ -38,7 +39,7 @@ const Chat = () => {
     try {
       setMessages((prev) => [...prev, { role: "user", content: input }]);
 
-      const response = await axios.post("http://localhost:8000/api/chat", {
+      const response = await axios.post(`${API_BASE_URL}/api/chat`, {
         message: userInput,
         max_tokens: 1000,
       });
