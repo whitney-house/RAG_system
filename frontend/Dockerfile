@@ -22,8 +22,7 @@ COPY --from=build /app/dist /usr/share/nginx/html
 
 COPY nginx.conf /etc/nginx/nginx.conf
 
+CMD envsubst '$BACKEND_URL' < /etc/nginx/nginx.template > /etc/nginx/nginx.conf && \
+    nginx -g 'daemon off;'
 
 EXPOSE 80
-
-
-CMD ["nginx", "-g", "daemon off;"]
