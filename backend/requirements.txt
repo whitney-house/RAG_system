@@ -12,3 +12,4 @@ accelerate>=0.26.0
 llama-index-vector-stores-faiss>=0.1.0
 faiss-cpu>=1.7.4
 
+

@@ -28,13 +28,18 @@ const Chat = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!input.trim()) return;
+    
+    //Input not kept in the chat 
+    const userInput = input;
+
+    setInput("");
 
     setLoading(true);
     try {
       setMessages((prev) => [...prev, { role: "user", content: input }]);
 
       const response = await axios.post("http://localhost:8000/api/chat", {
-        message: input,
+        message: userInput,
         max_tokens: 1000,
       });
 

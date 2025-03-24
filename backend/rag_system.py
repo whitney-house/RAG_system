@@ -11,8 +11,6 @@ import os
 from dotenv import load_dotenv
 from typing import List, Dict, Any, Optional
 
-# Load environment variables
-#load_dotenv()
 
 # Configure logging
 logging.basicConfig(
@@ -40,9 +38,10 @@ class RecipeRAGSystem:
         """
         logger.info(f"Initializing RAGSystem with {embedding_model} and {llm_model}")
         
-        # Configure embedding model
-        Settings.llm = None
-        Settings.embed_model = HuggingFaceEmbedding(model_name=embedding_model)
+        
+        Settings.llm = None # To shut down openai error 
+        self.embedding_model = HuggingFaceEmbedding(model_name=embedding_model)
+        Settings.embed_model = self.embedding_model
         
         # Configure LLM
         self.generator = pipeline(
@@ -79,7 +78,7 @@ class RecipeRAGSystem:
             
             logger.info(f"Created {len(documents)} recipe documents")
 
-            embeddings = Settings.embed_model.get_text_embedding_batch(
+            embeddings = self.embedding_model.get_text_embedding_batch(
                 [doc.text for doc in documents]
             )
             dimension = len(embeddings[0])

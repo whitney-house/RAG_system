@@ -1,0 +1,54 @@
+.welcome-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh; /* 让它居中 */
+	text-align: center;
+	background-color: #fafafa;
+  }
+  
+  /* .logo {
+	display: flex;
+	align-items: center;
+	font-size: 2rem;
+	font-weight: bold;
+  }
+  
+  .logo img {
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+  } */
+  
+  .welcome-title {
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #333333;
+  }
+  
+  .welcome-content {
+	font-size: 1rem;
+	color: #666;
+	max-width: 500px;
+	line-height: 1.5;
+  }
+  
+  .start-button {
+	margin-top: 20px;
+	background-color: #4CAF50;
+	color: white;
+	font-size: 1.2rem;
+	padding: 12px 24px;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .start-button:hover {
+	background-color: #45a049;
+	transform: scale(1.05);
+  }
+  
