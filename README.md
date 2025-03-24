@@ -1,15 +1,4 @@
 
----
-title: "rag recipe generation system"
-emoji: "🍽️"
-colorFrom: "green"
-colorTo: "gray"
-sdk: "docker"
-sdk_version: "27.5.1"
-pinned: false
----
-
-
 # Recipe RAG System  
 
 Inspired by course: [Understanding LLMs](https://cogsciprag.github.io/Understanding-LLMs-course/intro.html)  
