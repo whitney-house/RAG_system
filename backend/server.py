@@ -1,5 +1,6 @@
-from fastapi import FastAPI, HTTPException, Depends, Request
-from fastapi.middleware.cors import CORSMiddleware
+from fastapi import FastAPI, HTTPException, Depends, Request, Response
+#from fastapi.middleware.cors import CORSMiddleware
+from starlette.middleware.cors import CORSMiddleware 
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 from typing import List, Dict, Any, Optional
@@ -28,15 +29,20 @@ app = FastAPI(
     version="1.0.0"
 )
 
+origins = [
+    "https://rag-qa.vercel.app", 
+]
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
     #allow_origins=os.getenv("ALLOWED_ORIGINS", "*").split(","),
     allow_origins=["*"],
+
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 # Request models
 class ChatRequest(BaseModel):
