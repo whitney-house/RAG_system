@@ -4,9 +4,9 @@ http {
     default_type  application/octet-stream;
     
     # ADD MIME
-    types {
-        application/javascript js mjs;
-    }
+    #types {
+       # application/javascript js mjs;
+    #}
 
     server {
         listen 80;
